@@ -1,0 +1,9 @@
+import requests 
+import cowsay
+import sys 
+if len(sys.argv)==2:
+    x=input("cow or trex? ")
+    if x == "cow":
+        cowsay.cow("hello " + sys.argv[1])
+    if x == "trex":
+        cowsay.trex("hello "+ sys.argv[1])
